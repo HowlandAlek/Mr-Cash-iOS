@@ -13,7 +13,6 @@ class ViewController: UIViewController
     
     @IBOutlet weak var tfNombre: UITextField!
     
-    @IBOutlet weak var tfApellido: UITextField!
     
     @IBOutlet weak var tfCorreo: UITextField!
     

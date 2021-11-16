@@ -13,7 +13,11 @@
 		680B35972743D81F00BE630D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680B35952743D81F00BE630D /* Main.storyboard */; };
 		680B35992743D82000BE630D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680B35982743D82000BE630D /* Assets.xcassets */; };
 		680B359C2743D82000BE630D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680B359A2743D82000BE630D /* LaunchScreen.storyboard */; };
+		683FCF6127441A3C009C59EE /* AgregarRecordatorioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FCF6027441A3C009C59EE /* AgregarRecordatorioVC.swift */; };
 		687B688D2743F8FB0040332D /* logo_mr_cash.png in Resources */ = {isa = PBXBuildFile; fileRef = 687B688C2743F8FB0040332D /* logo_mr_cash.png */; };
+		687B6895274411320040332D /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B6894274411320040332D /* MainTabController.swift */; };
+		687B6899274411F70040332D /* RecordatoriosNavContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B6898274411F70040332D /* RecordatoriosNavContoller.swift */; };
+		687B689D274416F00040332D /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B689C274416F00040332D /* PerfilViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +29,11 @@
 		680B35982743D82000BE630D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		680B359B2743D82000BE630D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680B359D2743D82000BE630D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683FCF6027441A3C009C59EE /* AgregarRecordatorioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarRecordatorioVC.swift; sourceTree = "<group>"; };
 		687B688C2743F8FB0040332D /* logo_mr_cash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_mr_cash.png; sourceTree = "<group>"; };
+		687B6894274411320040332D /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		687B6898274411F70040332D /* RecordatoriosNavContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordatoriosNavContoller.swift; sourceTree = "<group>"; };
+		687B689C274416F00040332D /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				680B35982743D82000BE630D /* Assets.xcassets */,
 				680B359A2743D82000BE630D /* LaunchScreen.storyboard */,
 				680B359D2743D82000BE630D /* Info.plist */,
+				687B6894274411320040332D /* MainTabController.swift */,
+				687B6898274411F70040332D /* RecordatoriosNavContoller.swift */,
+				687B689C274416F00040332D /* PerfilViewController.swift */,
+				683FCF6027441A3C009C59EE /* AgregarRecordatorioVC.swift */,
 			);
 			path = "Mr-Cash";
 			sourceTree = "<group>";
@@ -142,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687B689D274416F00040332D /* PerfilViewController.swift in Sources */,
 				680B35942743D81F00BE630D /* ViewController.swift in Sources */,
+				687B6899274411F70040332D /* RecordatoriosNavContoller.swift in Sources */,
+				687B6895274411320040332D /* MainTabController.swift in Sources */,
 				680B35902743D81F00BE630D /* AppDelegate.swift in Sources */,
+				683FCF6127441A3C009C59EE /* AgregarRecordatorioVC.swift in Sources */,
 				680B35922743D81F00BE630D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
