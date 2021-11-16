@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -266,14 +267,65 @@
                     <view key="view" contentMode="scaleToFill" id="WHx-Rk-elK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gzs-6b-wdx">
+                                <rect key="frame" x="20" y="157" width="320" height="430.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del recordatorio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHv-87-lsS">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSa-0H-abH">
+                                        <rect key="frame" x="0.0" y="37.5" width="320" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gh-sx-2m4">
+                                        <rect key="frame" x="0.0" y="88.5" width="320" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IUA-5F-lb8">
+                                        <rect key="frame" x="0.0" y="126" width="320" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOd-6O-Qaf">
+                                        <rect key="frame" x="0.0" y="177" width="320" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-KN-Nba">
+                                        <rect key="frame" x="0.0" y="214.5" width="320" height="216"/>
+                                    </datePicker>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hay-Nj-5E0">
+                                <rect key="frame" x="80" y="637.5" width="255" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Agregar recordatorio"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5dP-ma-Kab"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hay-Nj-5E0" firstAttribute="top" secondItem="Gzs-6b-wdx" secondAttribute="bottom" constant="50" id="0F8-M4-xll"/>
+                            <constraint firstItem="Gzs-6b-wdx" firstAttribute="leading" secondItem="5dP-ma-Kab" secondAttribute="leading" constant="20" id="Ivn-yV-cis"/>
+                            <constraint firstItem="Hay-Nj-5E0" firstAttribute="leading" secondItem="5dP-ma-Kab" secondAttribute="leading" constant="80" id="JXl-Mk-mh8"/>
+                            <constraint firstItem="5dP-ma-Kab" firstAttribute="trailing" secondItem="Hay-Nj-5E0" secondAttribute="trailing" constant="79" id="MRC-wg-xFR"/>
+                            <constraint firstItem="5dP-ma-Kab" firstAttribute="trailing" secondItem="Gzs-6b-wdx" secondAttribute="trailing" constant="74" id="lNd-9E-gIn"/>
+                            <constraint firstItem="Gzs-6b-wdx" firstAttribute="top" secondItem="5dP-ma-Kab" secondAttribute="top" constant="17" id="rvk-ar-wus"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Agregar recordatorio" id="1cd-vr-S3g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGe-pf-5nW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1645" y="2109"/>
+            <point key="canvasLocation" x="1644.9275362318842" y="2108.0357142857142"/>
         </scene>
         <!--Agregar meta-->
         <scene sceneID="E31-TV-Fv1">
@@ -282,8 +334,75 @@
                     <view key="view" contentMode="scaleToFill" id="jyh-hN-dIC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qqe-fr-ECN">
+                                <rect key="frame" x="20" y="157" width="320" height="515"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la meta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8e-dB-K3n">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ag1-dk-lY6">
+                                        <rect key="frame" x="0.0" y="37.5" width="320" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AM-Ko-hC0">
+                                        <rect key="frame" x="0.0" y="88.5" width="320" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lMW-vJ-T3r">
+                                        <rect key="frame" x="0.0" y="126" width="320" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yZ-wK-T5m">
+                                        <rect key="frame" x="0.0" y="177" width="320" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQg-mW-1jz">
+                                        <rect key="frame" x="0.0" y="214.5" width="320" height="30"/>
+                                        <menu key="menu" id="nyj-bh-bUv">
+                                            <children>
+                                                <command title="Item 1" id="Aov-5u-lUl"/>
+                                                <command title="Item 2" id="s6N-6C-Vja"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLQ-2a-PWF">
+                                        <rect key="frame" x="0.0" y="261.5" width="320" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wj0-tE-n55">
+                                        <rect key="frame" x="0.0" y="299" width="320" height="216"/>
+                                    </datePicker>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIR-uQ-1Gy">
+                                <rect key="frame" x="80" y="722" width="255" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Agregar meta"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ceh-B5-91F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qqe-fr-ECN" firstAttribute="top" secondItem="Ceh-B5-91F" secondAttribute="top" constant="17" id="49F-ze-Q1E"/>
+                            <constraint firstItem="YIR-uQ-1Gy" firstAttribute="leading" secondItem="Ceh-B5-91F" secondAttribute="leading" constant="80" id="EeM-zJ-WaT"/>
+                            <constraint firstItem="Ceh-B5-91F" firstAttribute="trailing" secondItem="YIR-uQ-1Gy" secondAttribute="trailing" constant="79" id="Wqu-ze-lLo"/>
+                            <constraint firstItem="YIR-uQ-1Gy" firstAttribute="top" secondItem="Qqe-fr-ECN" secondAttribute="bottom" constant="50" id="ZaM-TO-dsj"/>
+                            <constraint firstItem="Qqe-fr-ECN" firstAttribute="leading" secondItem="Ceh-B5-91F" secondAttribute="leading" constant="20" id="lda-Mq-czY"/>
+                            <constraint firstItem="Ceh-B5-91F" firstAttribute="trailing" secondItem="Qqe-fr-ECN" secondAttribute="trailing" constant="74" id="yQO-Gy-uli"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Agregar meta" id="7K5-En-83z"/>
                 </viewController>
