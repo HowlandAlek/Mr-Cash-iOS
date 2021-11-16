@@ -418,9 +418,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6a-tU-rt1">
-                                <rect key="frame" x="137" y="433" width="141" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6a-tU-rt1">
+                                <rect key="frame" x="137" y="319" width="141" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Agregar"/>
                                 <connections>
@@ -430,6 +429,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sM7-Vl-s3F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i6a-tU-rt1" firstAttribute="leading" secondItem="sM7-Vl-s3F" secondAttribute="leading" constant="137" id="8Cf-tj-KgD"/>
+                            <constraint firstItem="sM7-Vl-s3F" firstAttribute="trailing" secondItem="i6a-tU-rt1" secondAttribute="trailing" constant="136" id="quQ-31-MwF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Metas" id="FsQ-96-mmc"/>
                 </viewController>
@@ -520,8 +523,8 @@
         <scene sceneID="ecf-sr-NQZ">
             <objects>
                 <navigationController id="rw9-Sp-eAu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w7h-pM-YIw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="w7h-pM-YIw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>
@@ -630,30 +633,112 @@
                     <view key="view" contentMode="scaleToFill" id="T4W-Zh-ZhA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart.xyaxis.line" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EvW-n3-yC2">
+                                <rect key="frame" x="20" y="231" width="374" height="364"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1Rh-Ff-fFm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EvW-n3-yC2" firstAttribute="leading" secondItem="1Rh-Ff-fFm" secondAttribute="leading" constant="20" id="09I-12-8lg"/>
+                            <constraint firstItem="1Rh-Ff-fFm" firstAttribute="trailing" secondItem="EvW-n3-yC2" secondAttribute="trailing" constant="20" id="HuD-nx-niE"/>
+                            <constraint firstItem="EvW-n3-yC2" firstAttribute="top" secondItem="1Rh-Ff-fFm" secondAttribute="top" constant="89.5" id="IAO-Dp-hTH"/>
+                            <constraint firstItem="1Rh-Ff-fFm" firstAttribute="bottom" secondItem="EvW-n3-yC2" secondAttribute="bottom" constant="217" id="evc-rE-BlT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Estadísticas" id="3jm-hY-Frf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k74-Yc-3DU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4161" y="1419"/>
+            <point key="canvasLocation" x="4160.8695652173919" y="1418.9732142857142"/>
         </scene>
         <!--Tips-->
         <scene sceneID="6hO-Kd-A6Q">
             <objects>
-                <viewController id="tXo-gG-xo5" sceneMemberID="viewController">
+                <viewController id="tXo-gG-xo5" customClass="TipsViewController" customModule="Mr_Cash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9jX-AO-0so">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rve-li-KTL">
+                                <rect key="frame" x="20" y="140" width="374" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaTips" id="w0I-77-nzf">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w0I-77-nzf" id="Lxq-Qt-TXp">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8kA-Ep-tzU" kind="show" id="g88-31-5Hd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tXo-gG-xo5" id="DuB-TM-OW9"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SAe-q5-TJD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rve-li-KTL" firstAttribute="leading" secondItem="SAe-q5-TJD" secondAttribute="leading" constant="20" id="GEY-Bj-1lI"/>
+                            <constraint firstItem="SAe-q5-TJD" firstAttribute="trailing" secondItem="rve-li-KTL" secondAttribute="trailing" constant="20" id="Kwu-lO-F6X"/>
+                            <constraint firstItem="rve-li-KTL" firstAttribute="bottom" secondItem="SAe-q5-TJD" secondAttribute="bottom" id="Ogq-je-ItA"/>
+                            <constraint firstItem="rve-li-KTL" firstAttribute="top" secondItem="SAe-q5-TJD" secondAttribute="top" constant="52" id="cmD-Un-2r2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tips" id="ePD-xq-bI2"/>
+                    <connections>
+                        <outlet property="tvTips" destination="rve-li-KTL" id="HHm-a4-JhK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrL-fC-iF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5041" y="1419"/>
+            <point key="canvasLocation" x="5040.579710144928" y="1418.9732142857142"/>
+        </scene>
+        <!--Detalle TipVC-->
+        <scene sceneID="UGJ-2C-8Pp">
+            <objects>
+                <viewController id="8kA-Ep-tzU" customClass="DetalleTipVC" customModule="Mr_Cash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0aN-2o-OOu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6I-Nw-rzf">
+                                <rect key="frame" x="20" y="140" width="374" height="673"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="eSi-PT-Bl9">
+                                <rect key="frame" x="197" y="466" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lcq-Ld-3cf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d6I-Nw-rzf" firstAttribute="top" secondItem="lcq-Ld-3cf" secondAttribute="top" id="QBw-dY-pkB"/>
+                            <constraint firstItem="lcq-Ld-3cf" firstAttribute="bottom" secondItem="d6I-Nw-rzf" secondAttribute="bottom" id="iLt-Mu-0la"/>
+                            <constraint firstItem="lcq-Ld-3cf" firstAttribute="trailing" secondItem="d6I-Nw-rzf" secondAttribute="trailing" constant="20" id="n62-CY-QEr"/>
+                            <constraint firstItem="d6I-Nw-rzf" firstAttribute="leading" secondItem="lcq-Ld-3cf" secondAttribute="leading" constant="20" id="tnc-kO-kGO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yzX-GT-RHn"/>
+                    <connections>
+                        <outlet property="aiCargando" destination="eSi-PT-Bl9" id="riy-FM-1lW"/>
+                        <outlet property="webTip" destination="d6I-Nw-rzf" id="ukQ-Ls-wLP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdG-Fv-0Rm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5040.579710144928" y="2108.0357142857142"/>
         </scene>
     </scenes>
     <resources>

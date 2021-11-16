@@ -16,6 +16,9 @@
 		6832BD9A274424B300682694 /* RecordatoriosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832BD99274424B300682694 /* RecordatoriosViewController.swift */; };
 		6832BD9C2744256300682694 /* Recordatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832BD9B2744256300682694 /* Recordatorio.swift */; };
 		6832BD9E2744390300682694 /* CeldaRecordatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832BD9D2744390300682694 /* CeldaRecordatorio.swift */; };
+		6832BDA02744509800682694 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832BD9F2744509800682694 /* TipsViewController.swift */; };
+		6832BDA227445AE900682694 /* DetalleTipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832BDA127445AE900682694 /* DetalleTipVC.swift */; };
+		6832BDA5274460E000682694 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6832BDA4274460E000682694 /* WebKit.framework */; };
 		683FCF6127441A3C009C59EE /* AgregarRecordatorioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FCF6027441A3C009C59EE /* AgregarRecordatorioVC.swift */; };
 		683FCF63274420C7009C59EE /* PerfilNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FCF62274420C7009C59EE /* PerfilNavController.swift */; };
 		687B688D2743F8FB0040332D /* logo_mr_cash.png in Resources */ = {isa = PBXBuildFile; fileRef = 687B688C2743F8FB0040332D /* logo_mr_cash.png */; };
@@ -36,6 +39,9 @@
 		6832BD99274424B300682694 /* RecordatoriosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordatoriosViewController.swift; sourceTree = "<group>"; };
 		6832BD9B2744256300682694 /* Recordatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recordatorio.swift; sourceTree = "<group>"; };
 		6832BD9D2744390300682694 /* CeldaRecordatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaRecordatorio.swift; sourceTree = "<group>"; };
+		6832BD9F2744509800682694 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		6832BDA127445AE900682694 /* DetalleTipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTipVC.swift; sourceTree = "<group>"; };
+		6832BDA4274460E000682694 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		683FCF6027441A3C009C59EE /* AgregarRecordatorioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarRecordatorioVC.swift; sourceTree = "<group>"; };
 		683FCF62274420C7009C59EE /* PerfilNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilNavController.swift; sourceTree = "<group>"; };
 		687B688C2743F8FB0040332D /* logo_mr_cash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_mr_cash.png; sourceTree = "<group>"; };
@@ -49,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6832BDA5274460E000682694 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +67,7 @@
 			children = (
 				680B358E2743D81F00BE630D /* Mr-Cash */,
 				680B358D2743D81F00BE630D /* Products */,
+				6832BDA3274460E000682694 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +98,18 @@
 				6832BD99274424B300682694 /* RecordatoriosViewController.swift */,
 				6832BD9B2744256300682694 /* Recordatorio.swift */,
 				6832BD9D2744390300682694 /* CeldaRecordatorio.swift */,
+				6832BD9F2744509800682694 /* TipsViewController.swift */,
+				6832BDA127445AE900682694 /* DetalleTipVC.swift */,
 			);
 			path = "Mr-Cash";
+			sourceTree = "<group>";
+		};
+		6832BDA3274460E000682694 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6832BDA4274460E000682694 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,12 +186,14 @@
 			files = (
 				687B689D274416F00040332D /* PerfilViewController.swift in Sources */,
 				680B35942743D81F00BE630D /* ViewController.swift in Sources */,
+				6832BDA02744509800682694 /* TipsViewController.swift in Sources */,
 				687B6899274411F70040332D /* RecordatoriosNavContoller.swift in Sources */,
 				687B6895274411320040332D /* MainTabController.swift in Sources */,
 				680B35902743D81F00BE630D /* AppDelegate.swift in Sources */,
 				683FCF6127441A3C009C59EE /* AgregarRecordatorioVC.swift in Sources */,
 				6832BD9C2744256300682694 /* Recordatorio.swift in Sources */,
 				6832BD9A274424B300682694 /* RecordatoriosViewController.swift in Sources */,
+				6832BDA227445AE900682694 /* DetalleTipVC.swift in Sources */,
 				6832BD9E2744390300682694 /* CeldaRecordatorio.swift in Sources */,
 				680B35922743D81F00BE630D /* SceneDelegate.swift in Sources */,
 				683FCF63274420C7009C59EE /* PerfilNavController.swift in Sources */,

@@ -25,6 +25,7 @@ class ViewController: UIViewController
     }
     
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let MainTabController = segue.destination as? MainTabController {
@@ -33,6 +34,24 @@ class ViewController: UIViewController
             
             MainTabController.correo = tfCorreo.text
             
+        }
+        /*
+         // Cuadro de dialogo
+         let alerta = UIAlertController(title: "Aviso", message: "Error, entrada incorrecta.", preferredStyle: .alert)
+         // Boton
+         let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+         alerta.addAction(aceptar)
+         // Mostrar la alerta
+         present(alerta, animated: true)
+         */
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if tfNombre.text != nil && tfCorreo.text != nil && tfPassword != nil {
+            return true
+        } else {
+            
+            return false
         }
     }
     
