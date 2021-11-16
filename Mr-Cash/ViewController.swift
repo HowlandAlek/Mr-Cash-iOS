@@ -10,6 +10,16 @@ import UIKit
 class ViewController: UIViewController
 {
     
+    
+    @IBOutlet weak var tfNombre: UITextField!
+    
+    @IBOutlet weak var tfApellido: UITextField!
+    
+    @IBOutlet weak var tfCorreo: UITextField!
+    
+    
+    @IBOutlet weak var tfPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
