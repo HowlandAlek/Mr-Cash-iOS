@@ -25,7 +25,15 @@ class ViewController: UIViewController
     }
     
     
-    @IBAction func registerTap(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let MainTabController = segue.destination as? MainTabController {
+            
+            MainTabController.nombre = tfNombre.text
+            
+            MainTabController.correo = tfCorreo.text
+            
+        }
     }
     
 

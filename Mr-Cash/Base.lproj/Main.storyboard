@@ -38,7 +38,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Registrarme"/>
                                 <connections>
-                                    <action selector="registerTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e3j-Pg-p43"/>
                                     <segue destination="afM-KG-CLj" kind="show" id="pc2-pW-6dY"/>
                                 </connections>
                             </button>
@@ -275,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="2513" y="723"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Perfil Nav Controller-->
         <scene sceneID="Jhb-6f-zun">
             <objects>
-                <navigationController id="ieI-r2-B7T" sceneMemberID="viewController">
+                <navigationController id="ieI-r2-B7T" customClass="PerfilNavController" customModule="Mr_Cash" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="c0u-pd-9mB">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -291,7 +290,7 @@
         <!--Perfil-->
         <scene sceneID="a4K-Mq-AuG">
             <objects>
-                <navigationController id="gbO-mP-XHl" sceneMemberID="viewController">
+                <navigationController id="gbO-mP-XHl" customClass="PerfilNavController" customModule="Mr_Cash" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Perfil" image="person" catalog="system" id="Yvj-L4-GcN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="8M2-cu-qef">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -402,9 +401,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Cerrar sesión">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="GDf-Z3-XLM" kind="show" id="z51-9r-tzX"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jR3-ML-k5n"/>
@@ -419,6 +415,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Perfil" id="0KA-sp-NVu"/>
+                    <connections>
+                        <outlet property="tfCorreo" destination="EW1-ct-eFW" id="sOy-at-PPK"/>
+                        <outlet property="tfNombre" destination="db7-v2-mtn" id="bIi-eX-EIY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kp8-P2-Lhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
