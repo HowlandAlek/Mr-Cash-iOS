@@ -175,6 +175,17 @@
                     <view key="view" contentMode="scaleToFill" id="TxQ-OD-c8I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ng-Ev-WhG">
+                                <rect key="frame" x="137" y="433" width="141" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Agregar"/>
+                                <connections>
+                                    <segue destination="Yev-uy-52U" kind="show" id="Lqq-zx-H8e"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6J2-yx-fp5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -182,7 +193,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fph-lD-CkD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1645" y="1419"/>
+            <point key="canvasLocation" x="1644.9275362318842" y="1418.9732142857142"/>
+        </scene>
+        <!--Agregar recordatorio-->
+        <scene sceneID="kus-Em-4TR">
+            <objects>
+                <viewController id="Yev-uy-52U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WHx-Rk-elK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5dP-ma-Kab"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Agregar recordatorio" id="1cd-vr-S3g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGe-pf-5nW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645" y="2109"/>
+        </scene>
+        <!--Agregar meta-->
+        <scene sceneID="E31-TV-Fv1">
+            <objects>
+                <viewController id="MZQ-fE-F6b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jyh-hN-dIC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ceh-B5-91F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Agregar meta" id="7K5-En-83z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbi-KJ-96v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512" y="2109"/>
         </scene>
         <!--Metas-->
         <scene sceneID="AIo-w8-pIQ">
@@ -191,6 +234,17 @@
                     <view key="view" contentMode="scaleToFill" id="Ikd-6R-063">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6a-tU-rt1">
+                                <rect key="frame" x="137" y="433" width="141" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Agregar"/>
+                                <connections>
+                                    <segue destination="MZQ-fE-F6b" kind="show" id="UAO-T7-VH2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="sM7-Vl-s3F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -198,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEa-MF-pDg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2512" y="1419"/>
+            <point key="canvasLocation" x="2511.594202898551" y="1418.9732142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WcJ-Iq-xXg">
