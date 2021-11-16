@@ -21,6 +21,7 @@
 		6832BDA5274460E000682694 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6832BDA4274460E000682694 /* WebKit.framework */; };
 		6832BDA727446CC000682694 /* MetasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832BDA627446CC000682694 /* MetasViewController.swift */; };
 		6832BDA927446D8500682694 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832BDA827446D8500682694 /* Meta.swift */; };
+		6832BDAB2744734500682694 /* AgregarMetaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6832BDAA2744734500682694 /* AgregarMetaVC.swift */; };
 		683FCF6127441A3C009C59EE /* AgregarRecordatorioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FCF6027441A3C009C59EE /* AgregarRecordatorioVC.swift */; };
 		683FCF63274420C7009C59EE /* PerfilNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683FCF62274420C7009C59EE /* PerfilNavController.swift */; };
 		687B688D2743F8FB0040332D /* logo_mr_cash.png in Resources */ = {isa = PBXBuildFile; fileRef = 687B688C2743F8FB0040332D /* logo_mr_cash.png */; };
@@ -46,6 +47,7 @@
 		6832BDA4274460E000682694 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6832BDA627446CC000682694 /* MetasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetasViewController.swift; sourceTree = "<group>"; };
 		6832BDA827446D8500682694 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		6832BDAA2744734500682694 /* AgregarMetaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarMetaVC.swift; sourceTree = "<group>"; };
 		683FCF6027441A3C009C59EE /* AgregarRecordatorioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarRecordatorioVC.swift; sourceTree = "<group>"; };
 		683FCF62274420C7009C59EE /* PerfilNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilNavController.swift; sourceTree = "<group>"; };
 		687B688C2743F8FB0040332D /* logo_mr_cash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_mr_cash.png; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				6832BDA127445AE900682694 /* DetalleTipVC.swift */,
 				6832BDA627446CC000682694 /* MetasViewController.swift */,
 				6832BDA827446D8500682694 /* Meta.swift */,
+				6832BDAA2744734500682694 /* AgregarMetaVC.swift */,
 			);
 			path = "Mr-Cash";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				687B6895274411320040332D /* MainTabController.swift in Sources */,
 				680B35902743D81F00BE630D /* AppDelegate.swift in Sources */,
 				683FCF6127441A3C009C59EE /* AgregarRecordatorioVC.swift in Sources */,
+				6832BDAB2744734500682694 /* AgregarMetaVC.swift in Sources */,
 				6832BD9C2744256300682694 /* Recordatorio.swift in Sources */,
 				6832BDA927446D8500682694 /* Meta.swift in Sources */,
 				6832BD9A274424B300682694 /* RecordatoriosViewController.swift in Sources */,

@@ -11,10 +11,10 @@ class Meta
 {
     var Nombre: String
     var Monto: Double
-    var Tipo: Tipo
+    var Tipo: String
     var Fecha: Date
     
-    init (nombre: String, monto: Double, fecha: Date, tipo: Tipo)
+    init (nombre: String, monto: Double, fecha: Date, tipo: String)
     {
         self.Nombre = nombre
         self.Monto = monto
@@ -22,11 +22,4 @@ class Meta
         self.Tipo = tipo
     }
     
-}
-
-enum Tipo {
-    case ENTRETENIMIENTO
-    case HOGAR
-    case TRABAJO
-    case EDUCACIÓN
 }

@@ -11,13 +11,13 @@ class MetasViewController: UIViewController {
     
     var arrMetas:[Meta] = []
     
-    var meta1 = Meta(nombre: "Xbox", monto: 13999, fecha: Date(), tipo: Tipo.ENTRETENIMIENTO)
+    var meta1 = Meta(nombre: "Xbox", monto: 13999, fecha: Date(), tipo: "Entretenimiento")
     
-    var meta2 = Meta(nombre: "Dune", monto: 399, fecha: Date(), tipo: Tipo.ENTRETENIMIENTO)
+    var meta2 = Meta(nombre: "Dune", monto: 399, fecha: Date(), tipo: "Entretenimiento")
     
-    var meta3 = Meta(nombre: "MacBook Pro", monto: 72000, fecha: Date(), tipo: Tipo.EDUCACIÓN)
+    var meta3 = Meta(nombre: "MacBook Pro", monto: 72000, fecha: Date(), tipo: "Trabajo")
     
-    var meta4 = Meta(nombre: "Reparación ventana", monto: 7000, fecha: Date(), tipo: Tipo.HOGAR)
+    var meta4 = Meta(nombre: "Reparación ventana", monto: 7000, fecha: Date(), tipo: "Hogar")
     
 
     override func viewDidLoad() {
