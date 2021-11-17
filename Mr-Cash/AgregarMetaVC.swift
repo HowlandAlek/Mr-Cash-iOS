@@ -26,7 +26,7 @@ class AgregarMetaVC: UIViewController {
     }
 
     @IBAction func agregarMeta(_ sender: Any) {
-        if tfNombre.text != nil && tfMonto.text != nil && tfTipo != nil && dpFecha.date >= Date() {
+        if tfNombre.text != nil && tfMonto.text != nil && tfTipo.text != nil && dpFecha.date >= Date() {
             let nombre = tfNombre.text!
             let monto = Double(tfMonto.text!) ?? 0
             let tipo = tfTipo.text!

@@ -11,14 +11,12 @@ class Recordatorio
 {
     var Nombre: String
     var Monto: Double
-    var Hora: Int
     var Fecha: Date
     
-    init (nombre: String, monto: Double, hora: Int, fecha: Date)
+    init (nombre: String, monto: Double, fecha: Date)
     {
         self.Nombre = nombre
         self.Monto = monto
-        self.Hora = hora
         self.Fecha = fecha
     }
     

@@ -307,6 +307,9 @@
                                 <rect key="frame" x="80" y="637.5" width="255" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Agregar recordatorio"/>
+                                <connections>
+                                    <action selector="agregarRecordatorio:" destination="Yev-uy-52U" eventType="touchUpInside" id="zmJ-G2-Ndf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5dP-ma-Kab"/>
@@ -321,6 +324,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Agregar recordatorio" id="1cd-vr-S3g"/>
+                    <connections>
+                        <outlet property="dpFecha" destination="eu9-KN-Nba" id="Swi-Qb-zU9"/>
+                        <outlet property="tfMonto" destination="IUA-5F-lb8" id="SoG-nL-AqJ"/>
+                        <outlet property="tfNombre" destination="uSa-0H-abH" id="heR-Uj-Xgg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGe-pf-5nW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

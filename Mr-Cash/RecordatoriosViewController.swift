@@ -15,7 +15,7 @@ class RecordatoriosViewController: UIViewController
     
     var arrRecordatorios  = [] as [Recordatorio]
     
-    var recordatorio = Recordatorio(nombre: "Xbox", monto: 13999, hora: Calendar.current.component(.hour, from: Date()), fecha: Date())
+    var recordatorio = Recordatorio(nombre: "Xbox", monto: 13999, fecha: Date())
     
     
     override func viewDidLoad() {
