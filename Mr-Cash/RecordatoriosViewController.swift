@@ -37,7 +37,7 @@ class RecordatoriosViewController: UIViewController
         var recordatorio = Recordatorio(nombre: "Netlix", monto: 280, fecha: fechaDemo!)
         var recordatorio2 = Recordatorio(nombre: "Colegiatura Tec", monto: 30000, fecha: fechaDemo!)
         var recordatorio3 = Recordatorio(nombre: "Disney+", monto: 249, fecha: fechaDemo!)
-        var recordatorio4 = Recordatorio(nombre: "CFE (Luz)+", monto: 450, fecha: fechaDemo!)
+        var recordatorio4 = Recordatorio(nombre: "CFE (Luz)", monto: 450, fecha: fechaDemo!)
         var recordatorio5 = Recordatorio(nombre: "Xbox Gamepass Ultimate", monto: 269, fecha: fechaDemo!)
         
         

@@ -34,7 +34,7 @@ class AgregarRecordatorioVC: UIViewController {
             print(nuevoRecordatorio.Nombre,nuevoRecordatorio.Monto, nuevoRecordatorio.Fecha)
             
             // Cuadro de dialogo
-            let alerta = UIAlertController(title: "Aviso", message: "El recordatorio se guaró correctamente", preferredStyle: .alert)
+            let alerta = UIAlertController(title: "Aviso", message: "El recordatorio se guardó correctamente", preferredStyle: .alert)
             // Boton
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: {(alert: UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)})
             alerta.addAction(aceptar)
