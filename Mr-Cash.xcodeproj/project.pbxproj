@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		680A3F4A27481DCF0067FC0E /* estadistica_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 680A3F4927481DCF0067FC0E /* estadistica_1.png */; };
+		680A3F4C27481FD60067FC0E /* CeldaMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680A3F4B27481FD60067FC0E /* CeldaMeta.swift */; };
 		680B35902743D81F00BE630D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B358F2743D81F00BE630D /* AppDelegate.swift */; };
 		680B35922743D81F00BE630D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B35912743D81F00BE630D /* SceneDelegate.swift */; };
 		680B35942743D81F00BE630D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B35932743D81F00BE630D /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		680A3F4927481DCF0067FC0E /* estadistica_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estadistica_1.png; sourceTree = "<group>"; };
+		680A3F4B27481FD60067FC0E /* CeldaMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMeta.swift; sourceTree = "<group>"; };
 		680B358C2743D81F00BE630D /* Mr-Cash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mr-Cash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680B358F2743D81F00BE630D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		680B35912743D81F00BE630D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				6832BD99274424B300682694 /* RecordatoriosViewController.swift */,
 				6832BD9B2744256300682694 /* Recordatorio.swift */,
 				6832BD9D2744390300682694 /* CeldaRecordatorio.swift */,
+				680A3F4B27481FD60067FC0E /* CeldaMeta.swift */,
 				6832BD9F2744509800682694 /* TipsViewController.swift */,
 				6832BDA127445AE900682694 /* DetalleTipVC.swift */,
 				6832BDA627446CC000682694 /* MetasViewController.swift */,
@@ -200,6 +203,7 @@
 				687B689D274416F00040332D /* PerfilViewController.swift in Sources */,
 				680B35942743D81F00BE630D /* ViewController.swift in Sources */,
 				6832BDA02744509800682694 /* TipsViewController.swift in Sources */,
+				680A3F4C27481FD60067FC0E /* CeldaMeta.swift in Sources */,
 				687B6899274411F70040332D /* RecordatoriosNavContoller.swift in Sources */,
 				687B6895274411320040332D /* MainTabController.swift in Sources */,
 				680B35902743D81F00BE630D /* AppDelegate.swift in Sources */,
