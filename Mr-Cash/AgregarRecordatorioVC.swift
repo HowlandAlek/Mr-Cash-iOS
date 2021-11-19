@@ -32,6 +32,8 @@ class AgregarRecordatorioVC: UIViewController {
             let nuevoRecordatorio = Recordatorio(nombre: nombre, monto: monto, fecha: fecha)
             
             print(nuevoRecordatorio.Nombre,nuevoRecordatorio.Monto, nuevoRecordatorio.Fecha)
+            
+            self.navigationController?.popToRootViewController(animated: true)
         } else {
             // Cuadro de dialogo
             let alerta = UIAlertController(title: "Aviso", message: "Error, entrada incorrecta.", preferredStyle: .alert)

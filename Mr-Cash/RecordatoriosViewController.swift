@@ -16,6 +16,7 @@ class RecordatoriosViewController: UIViewController
     var arrRecordatorios  = [] as [Recordatorio]
     
     var recordatorio = Recordatorio(nombre: "Xbox", monto: 13999, fecha: Date())
+    var recordatorio2 = Recordatorio(nombre: "PS5", monto: 13999, fecha: Date())
     
     
     override func viewDidLoad() {
@@ -24,6 +25,7 @@ class RecordatoriosViewController: UIViewController
         // Do any additional setup after loading the view.
         
         arrRecordatorios.append(recordatorio)
+        arrRecordatorios.append(recordatorio2)
         
         tvRecordatorios.delegate = self
         tvRecordatorios.dataSource = self

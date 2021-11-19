@@ -35,6 +35,10 @@ class AgregarMetaVC: UIViewController {
             let nuevaMeta = Meta(nombre: nombre, monto: monto, fecha: fecha, tipo: tipo)
             
             print(nuevaMeta.Nombre,nuevaMeta.Monto,nuevaMeta.Tipo,nuevaMeta.Fecha)
+            
+            agregarMetaArr(meta: nuevaMeta)
+            
+            self.navigationController?.popToRootViewController(animated: true)
         } else {
             // Cuadro de dialogo
             let alerta = UIAlertController(title: "Aviso", message: "Error, entrada incorrecta.", preferredStyle: .alert)
@@ -46,4 +50,11 @@ class AgregarMetaVC: UIViewController {
         }
     }
     
+    func agregarMetaArr(meta: Meta) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "MetasViewController") as? MetasViewController else {
+                return
+            }
+        vc.arrMetas.append(meta)
+    }
+        
 }
