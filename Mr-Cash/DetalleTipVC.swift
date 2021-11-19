@@ -17,6 +17,10 @@ class DetalleTipVC: UIViewController {
     
     @IBOutlet weak var aiCargando: UIActivityIndicatorView!
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            view.endEditing(true)
+        }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -24,6 +24,10 @@ class AgregarMetaVC: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            view.endEditing(true)
+        }
 
     @IBAction func agregarMeta(_ sender: Any) {
         if tfNombre.text != nil && tfMonto.text != nil && tfTipo.text != nil && dpFecha.date >= Date() {
