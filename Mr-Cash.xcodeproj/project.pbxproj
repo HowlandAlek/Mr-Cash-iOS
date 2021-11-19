@@ -30,6 +30,7 @@
 		687B6899274411F70040332D /* RecordatoriosNavContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B6898274411F70040332D /* RecordatoriosNavContoller.swift */; };
 		687B689D274416F00040332D /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687B689C274416F00040332D /* PerfilViewController.swift */; };
 		6890D488274838D0007746BA /* estadistica_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6890D487274838D0007746BA /* estadistica_1.png */; };
+		6890D48C2748436F007746BA /* logo_mr_cash_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6890D48B2748436F007746BA /* logo_mr_cash_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		687B6898274411F70040332D /* RecordatoriosNavContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordatoriosNavContoller.swift; sourceTree = "<group>"; };
 		687B689C274416F00040332D /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		6890D487274838D0007746BA /* estadistica_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estadistica_1.png; sourceTree = "<group>"; };
+		6890D48B2748436F007746BA /* logo_mr_cash_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_mr_cash_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				6890D487274838D0007746BA /* estadistica_1.png */,
+				6890D48B2748436F007746BA /* logo_mr_cash_icon.png */,
 				687B688C2743F8FB0040332D /* logo_mr_cash.png */,
 				680B358F2743D81F00BE630D /* AppDelegate.swift */,
 				680B35912743D81F00BE630D /* SceneDelegate.swift */,
@@ -188,6 +191,7 @@
 				687B688D2743F8FB0040332D /* logo_mr_cash.png in Resources */,
 				680B359C2743D82000BE630D /* LaunchScreen.storyboard in Resources */,
 				680B35992743D82000BE630D /* Assets.xcassets in Resources */,
+				6890D48C2748436F007746BA /* logo_mr_cash_icon.png in Resources */,
 				6890D488274838D0007746BA /* estadistica_1.png in Resources */,
 				680B35972743D81F00BE630D /* Main.storyboard in Resources */,
 			);
