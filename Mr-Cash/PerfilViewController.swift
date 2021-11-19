@@ -25,4 +25,9 @@ class PerfilViewController: UIViewController {
         tfCorreo.text = correo
     }
     
+    
+    @IBAction func signOut(_ sender: Any) {
+        self.parent?.navigationController?.popToRootViewController(animated: true)
+    }
+    
 }

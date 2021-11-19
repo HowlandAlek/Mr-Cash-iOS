@@ -47,11 +47,20 @@ class ViewController: UIViewController
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if tfNombre.text != nil && tfCorreo.text != nil && tfPassword != nil {
-            return true
-        } else {
-            
+        if tfNombre.text?.isEmpty == true || tfCorreo.text?.isEmpty == true  || tfPassword.text?.isEmpty == true  {
+            // Cuadro de dialogo
+            let alerta = UIAlertController(title: "Aviso", message: "Error, entrada incorrecta.", preferredStyle: .alert)
+            // Boton
+            let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+            alerta.addAction(aceptar)
+            // Mostrar la alerta
+            present(alerta, animated: true)
             return false
+        } else {
+            tfNombre.text = ""
+            tfCorreo.text = ""
+            tfPassword.text = ""
+            return true
         }
     }
     
