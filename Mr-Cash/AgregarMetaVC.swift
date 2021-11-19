@@ -34,14 +34,18 @@ class AgregarMetaVC: UIViewController {
             
             let nuevaMeta = Meta(nombre: nombre, monto: monto, fecha: fecha, tipo: tipo)
             
-            print(nuevaMeta.Nombre,nuevaMeta.Monto,nuevaMeta.Tipo,nuevaMeta.Fecha)
-            
-            agregarMetaArr(meta: nuevaMeta)
+            // Cuadro de dialogo
+            let alerta = UIAlertController(title: "Aviso", message: "La meta se guardó correctamente", preferredStyle: .alert)
+            // Boton
+            let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: {(alert: UIAlertAction!) in self.navigationController?.popToRootViewController(animated: true)})
+            alerta.addAction(aceptar)
+            // Mostrar la alerta
+            present(alerta, animated: true)
             
             self.navigationController?.popToRootViewController(animated: true)
         } else {
             // Cuadro de dialogo
-            let alerta = UIAlertController(title: "Aviso", message: "Error, entrada incorrecta.", preferredStyle: .alert)
+            let alerta = UIAlertController(title: "Aviso", message: "Debes introducir todos los campos", preferredStyle: .alert)
             // Boton
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
             alerta.addAction(aceptar)
@@ -50,11 +54,5 @@ class AgregarMetaVC: UIViewController {
         }
     }
     
-    func agregarMetaArr(meta: Meta) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "MetasViewController") as? MetasViewController else {
-                return
-            }
-        vc.arrMetas.append(meta)
-    }
         
 }

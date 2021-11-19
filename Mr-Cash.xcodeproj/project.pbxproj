@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680A3F4A27481DCF0067FC0E /* estadistica_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 680A3F4927481DCF0067FC0E /* estadistica_1.png */; };
 		680B35902743D81F00BE630D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B358F2743D81F00BE630D /* AppDelegate.swift */; };
 		680B35922743D81F00BE630D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B35912743D81F00BE630D /* SceneDelegate.swift */; };
 		680B35942743D81F00BE630D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B35932743D81F00BE630D /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		680A3F4927481DCF0067FC0E /* estadistica_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estadistica_1.png; sourceTree = "<group>"; };
 		680B358C2743D81F00BE630D /* Mr-Cash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mr-Cash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680B358F2743D81F00BE630D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		680B35912743D81F00BE630D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		680B358E2743D81F00BE630D /* Mr-Cash */ = {
 			isa = PBXGroup;
 			children = (
+				680A3F4927481DCF0067FC0E /* estadistica_1.png */,
 				687B688C2743F8FB0040332D /* logo_mr_cash.png */,
 				680B358F2743D81F00BE630D /* AppDelegate.swift */,
 				680B35912743D81F00BE630D /* SceneDelegate.swift */,
@@ -182,6 +185,7 @@
 				687B688D2743F8FB0040332D /* logo_mr_cash.png in Resources */,
 				680B359C2743D82000BE630D /* LaunchScreen.storyboard in Resources */,
 				680B35992743D82000BE630D /* Assets.xcassets in Resources */,
+				680A3F4A27481DCF0067FC0E /* estadistica_1.png in Resources */,
 				680B35972743D81F00BE630D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
